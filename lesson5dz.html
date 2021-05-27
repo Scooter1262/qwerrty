@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<div class="Chess"></div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+ 	var table = document.createElement("table"), tr,td;
+	 var row = "A,B,C,D,E,F,J,H";
+	 var coll= [1,2,3,4,5,6,7,8];
+	
+	 for(var i = 0; i<=9; i++){
+		
+	 	tr = document.createElement("tr");//создаём 8 строк
+	 	table.append(tr);//вставляем их в таблицы 
+        
+	 	for(var j=1 ; j<=9; j++){
+	 		td = document.createElement("td");
+			
+	 		tr.append(td);
+        	
+	 	    if (((td/2)*2)-td==0){
+		 document.write.style ("background-color:black");
+	 }
+                    
+               
+                    
+
+	 	} 
+	 }
+	 table.style.border = "40px solid gray";
+	document.getElementsByTagName("div")[0].append(table);
+
+
+	var list = document.querySelector("td");
+	var newItem = document.createElement("tr");
+	//newItem .insertAdjacentHTML("beforebegin","<tr> №" + j + "</tr>");  
+	newItem.innerText="Слон";
+	list.insertBefore(newItem, list.children[1]);
+
+	// var list = document.querySelector("td");
+	// var newItem = document.createElement("tr");
+	// //newItem .insertAdjacentHTML("beforebegin","<tr> №" + j + "</tr>");  
+	// newItem.innerText="athpm";
+	// list.insertBefore(newItem, list.children[]);
+    	
+		
+		</script>
+</head>
+<body>
+12345678
+
+</body>
+</html>
